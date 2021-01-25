@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Group fx:id="root" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+       fx:controller="com.lakrista.weightcontrol.controllers.DataController">
+    <children>
+        <TabPane prefHeight="509.0" prefWidth="449.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Data">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="469.0" prefWidth="449.0">
+                            <children>
+                                <Label layoutX="16.0" layoutY="26.0" text="Current weight:"/>
+                                <TextField fx:id="currentWeight" layoutX="119.0" layoutY="18.0" prefHeight="26.0"
+                                           prefWidth="127.0" promptText="Enter your weight"/>
+                                <Button fx:id="calculateButton" layoutX="14.0" layoutY="151.0" mnemonicParsing="false"
+                                        onAction="#calculate" prefHeight="32.0" prefWidth="82.0" text="Calculate"
+                                        textOverrun="CENTER_ELLIPSIS"/>
+                                <Label layoutX="16.0" layoutY="60.0" text="Desired weight:"/>
+                                <TextField fx:id="desiredWeight" layoutX="119.0" layoutY="54.0" prefHeight="26.0" prefWidth="127.0"
+                                           promptText="Enter desired weight"/>
+                                <Label layoutX="16.0" layoutY="103.0" text="Date to:"/>
+                                <DatePicker fx:id="dateTo" layoutX="76.0" layoutY="99.0" prefHeight="26.0" prefWidth="132.0"/>
+                                <Label fx:id="calculatedData" layoutX="16.0" layoutY="208.0" prefHeight="74.0" prefWidth="379.0"/>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Statistic">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</Group>
