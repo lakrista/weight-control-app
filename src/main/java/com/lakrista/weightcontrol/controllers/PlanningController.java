@@ -19,7 +19,7 @@ import static java.time.LocalDate.now;
 
 public class PlanningController {
     @FXML
-    public Button saveButton;
+    private Button saveButton;
     @FXML
     private TextField currentWeight;
     @FXML
@@ -27,7 +27,7 @@ public class PlanningController {
     @FXML
     private DatePicker dateTo;
     @FXML
-    public Button calculateButton;
+    private Button calculateButton;
     @FXML
     private Label calculatedData;
 
