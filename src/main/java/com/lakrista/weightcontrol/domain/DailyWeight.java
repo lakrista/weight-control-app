@@ -12,18 +12,14 @@ import java.time.LocalDate;
 @Data
 @Builder
 @Entity
-public class PlanningWeight {
+public class DailyWeight {
     @Id
     @GeneratedValue
     private Long id;
     @Column
-    private double currentWeight;
+    private LocalDate weighingDate;
     @Column
-    private double desiredWeight;
+    private double morningWeight;
     @Column
-    private LocalDate calculationDate;
-    @Column
-    private LocalDate dateTo;
-    @Column
-    private double calculatedDailyWeight;
+    private double eveningWeight;
 }

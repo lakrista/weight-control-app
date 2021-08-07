@@ -16,9 +16,15 @@
                                 <Insets top="10" left="10"/>
                             </padding>
                             <children>
-                                <Label text="Current weight:" layoutX="16.0" layoutY="26.0"/>
-                                <TextField fx:id="currentWeight" layoutX="119.0" layoutY="18.0" prefHeight="26.0"
-                                           prefWidth="130.0" promptText="Enter your weight"/>
+                                <Label text="Current weight:"
+                                       layoutX="16.0"
+                                       layoutY="26.0"/>
+                                <TextField fx:id="currentWeight"
+                                           layoutX="119.0"
+                                           layoutY="18.0"
+                                           prefHeight="26.0"
+                                           prefWidth="130.0"
+                                           promptText="Enter your weight"/>
                             </children>
                         </HBox>
                         <HBox alignment="CENTER_LEFT" spacing="5">
@@ -26,9 +32,15 @@
                                 <Insets top="10" left="10"/>
                             </padding>
                             <children>
-                                <Label layoutX="16.0" layoutY="60.0" text="Desired weight:"/>
-                                <TextField fx:id="desiredWeight" layoutX="119.0" layoutY="54.0" prefHeight="26.0"
-                                           prefWidth="130.0" promptText="Enter desired weight"/>
+                                <Label layoutX="16.0"
+                                       layoutY="60.0"
+                                       text="Desired weight:"/>
+                                <TextField fx:id="desiredWeight"
+                                           layoutX="119.0"
+                                           layoutY="54.0"
+                                           prefHeight="26.0"
+                                           prefWidth="130.0"
+                                           promptText="Enter desired weight"/>
                             </children>
                         </HBox>
                         <HBox alignment="CENTER_LEFT" spacing="5">
@@ -36,8 +48,13 @@
                                 <Insets top="10" left="10"/>
                             </padding>
                             <children>
-                                <Label layoutX="16.0" layoutY="103.0" text="Date to:"/>
-                                <DatePicker fx:id="dateTo" layoutX="76.0" layoutY="99.0" prefHeight="26.0"
+                                <Label layoutX="16.0"
+                                       layoutY="103.0"
+                                       text="Date to:"/>
+                                <DatePicker fx:id="dateTo"
+                                            layoutX="76.0"
+                                            layoutY="99.0"
+                                            prefHeight="26.0"
                                             prefWidth="130.0"/>
                             </children>
                         </HBox>
@@ -46,8 +63,14 @@
                                 <Insets top="10" left="10"/>
                             </padding>
                             <children>
-                                <Button fx:id="calculateButton" layoutX="16.0" layoutY="151.0" mnemonicParsing="false"
-                                        onAction="#calculate" prefHeight="26.0" prefWidth="130.0" text="Calculate"
+                                <Button fx:id="calculateButton"
+                                        layoutX="16.0"
+                                        layoutY="151.0"
+                                        mnemonicParsing="false"
+                                        onAction="#calculate"
+                                        prefHeight="26.0"
+                                        prefWidth="130.0"
+                                        text="Calculate"
                                         textOverrun="CENTER_ELLIPSIS"/>
                             </children>
                         </HBox>
@@ -56,9 +79,17 @@
                                 <Insets top="10" left="10"/>
                             </padding>
                             <children>
-                                <Label fx:id="calculatedData" layoutX="16.0" layoutY="208.0"/>
-                                <Button visible="false" fx:id="saveButton" mnemonicParsing="false" layoutX="16.0"
-                                        onAction="#save" prefHeight="26.0" prefWidth="130.0" text="Save data"
+                                <Label fx:id="calculatedData"
+                                       layoutX="16.0"
+                                       layoutY="208.0"/>
+                                <Button visible="false"
+                                        fx:id="saveButton"
+                                        mnemonicParsing="false"
+                                        layoutX="16.0"
+                                        onAction="#save"
+                                        prefHeight="26.0"
+                                        prefWidth="130.0"
+                                        text="Save data"
                                         textOverrun="CENTER_ELLIPSIS"/>
                             </children>
                         </VBox>

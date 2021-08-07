@@ -15,10 +15,14 @@
                                 <Insets top="10" left="10"/>
                             </padding>
                             <children>
-                                <Label layoutX="16.0" layoutY="14.0" text="Weighing date"/>
-                                <DatePicker fx:id="weighingDate" layoutX="16.0" layoutY="32.0" prefHeight="26.0"
+                                <Label layoutX="16.0"
+                                       layoutY="14.0"
+                                       text="Weighing date"/>
+                                <DatePicker fx:id="weighingDate"
+                                            layoutX="16.0"
+                                            layoutY="32.0"
+                                            prefHeight="26.0"
                                             prefWidth="130.0"/>
-                                <!--                                <CheckBox layoutX="184.0" layoutY="33.0" mnemonicParsing="false" text="CheckBox"/>-->
                             </children>
                         </HBox>
                         <HBox alignment="CENTER_LEFT" spacing="5">
@@ -27,7 +31,10 @@
                             </padding>
                             <children>
                                 <Label layoutX="16.0" layoutY="75.0" text="Morning weight"/>
-                                <TextField fx:id="morningWeight" layoutX="16.0" layoutY="93.0" prefHeight="26.0"
+                                <TextField fx:id="morningWeight"
+                                           layoutX="16.0"
+                                           layoutY="93.0"
+                                           prefHeight="26.0"
                                            prefWidth="130.0"/>
                             </children>
                         </HBox>
@@ -36,8 +43,13 @@
                                 <Insets top="10" left="10"/>
                             </padding>
                             <children>
-                                <Label layoutX="16.0" layoutY="141.0" text="Evening weight"/>
-                                <TextField fx:id="eveningWeight" layoutX="16.0" layoutY="159.0" prefHeight="26.0"
+                                <Label layoutX="16.0"
+                                       layoutY="141.0"
+                                       text="Evening weight"/>
+                                <TextField fx:id="eveningWeight"
+                                           layoutX="16.0"
+                                           layoutY="159.0"
+                                           prefHeight="26.0"
                                            prefWidth="130.0"/>
                             </children>
                         </HBox>
@@ -46,22 +58,32 @@
                                 <Insets top="10" left="10"/>
                             </padding>
                             <children>
-                                <Button layoutX="16.0" layoutY="200.0" mnemonicParsing="false" prefHeight="26.0"
-                                        prefWidth="130.0" text="Save"/>
+                                <Button fx:id="addWeightButton"
+                                        layoutX="16.0"
+                                        layoutY="200.0"
+                                        mnemonicParsing="false"
+                                        prefHeight="26.0"
+                                        onAction="#addWeight"
+                                        prefWidth="130.0"
+                                        text="Add"/>
                             </children>
                         </HBox>
                         <HBox alignment="CENTER_LEFT" spacing="5">
                             <padding>
-                                <Insets top="10" left="10"/>
+                                <Insets top="20" left="25"/>
                             </padding>
                             <children>
-                                <TableView layoutX="16.0" layoutY="235.0" prefHeight="200.0" prefWidth="325.0"
+                                <TableView fx:id="dataTable"
+                                           layoutX="16.0"
+                                           layoutY="235.0"
+                                           prefHeight="200.0"
+                                           prefWidth="325.0"
                                            AnchorPane.topAnchor="235.0">
                                     <columns>
-                                        <TableColumn prefWidth="101.0" text="Date"/>
+                                        <TableColumn prefWidth="100.0" text="Date"/>
                                         <TableColumn prefWidth="70.0" text="Desired"/>
-                                        <TableColumn prefWidth="79.0" text="Morning"/>
-                                        <TableColumn prefWidth="78.0" text="Evening"/>
+                                        <TableColumn prefWidth="70.0" text="Morning"/>
+                                        <TableColumn prefWidth="70.0" text="Evening"/>
                                     </columns>
                                 </TableView>
                             </children>
