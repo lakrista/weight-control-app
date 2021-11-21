@@ -1,8 +1,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.*?>
 <Tab xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" text="Weight Data"
      fx:controller="com.lakrista.weightcontrol.controllers.WeightDataController">
     <content>
@@ -43,21 +42,6 @@
                                 <Insets top="10" left="10"/>
                             </padding>
                             <children>
-                                <Label layoutX="16.0"
-                                       layoutY="141.0"
-                                       text="Evening weight"/>
-                                <TextField fx:id="eveningWeight"
-                                           layoutX="16.0"
-                                           layoutY="159.0"
-                                           prefHeight="26.0"
-                                           prefWidth="130.0"/>
-                            </children>
-                        </HBox>
-                        <HBox alignment="CENTER_LEFT" spacing="5">
-                            <padding>
-                                <Insets top="10" left="10"/>
-                            </padding>
-                            <children>
                                 <Button fx:id="addWeightButton"
                                         layoutX="16.0"
                                         layoutY="200.0"
@@ -80,10 +64,17 @@
                                            prefWidth="325.0"
                                            AnchorPane.topAnchor="235.0">
                                     <columns>
-                                        <TableColumn prefWidth="100.0" text="Date"/>
-                                        <TableColumn prefWidth="70.0" text="Desired"/>
-                                        <TableColumn prefWidth="70.0" text="Morning"/>
-                                        <TableColumn prefWidth="70.0" text="Evening"/>
+                                        <TableColumn prefWidth="100.0" text="Date">
+                                            <cellValueFactory>
+                                                <PropertyValueFactory property="weighingDate"/>
+                                            </cellValueFactory>
+                                        </TableColumn>
+                                        <!--                                        <TableColumn prefWidth="70.0" text="Desired"/>-->
+                                        <TableColumn prefWidth="70.0" text="Morning">
+                                            <cellValueFactory>
+                                                <PropertyValueFactory property="morningWeight"/>
+                                            </cellValueFactory>
+                                        </TableColumn>
                                     </columns>
                                 </TableView>
                             </children>

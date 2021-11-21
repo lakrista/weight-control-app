@@ -2,7 +2,7 @@ package com.lakrista.weightcontrol.database;
 
 import com.lakrista.weightcontrol.domain.PlanningWeight;
 
-public class PlanningWeightDataManager extends AbstractDataBaseManager<PlanningWeight>{
+public class PlanningWeightDataManager extends AbstractDataBaseManager<PlanningWeight> {
 
     private static final String DATA_BASE = "planning_weight";
 
